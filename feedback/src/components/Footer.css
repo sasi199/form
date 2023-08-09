@@ -1,0 +1,21 @@
+.footer {
+    background-color:  #8b1746;
+    color: #ffffff; /* Change to your desired text color */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;}
+  
+  .contact-info {
+    text-align: left;
+  }
+  
+  .website-link {
+    text-align: right;
+  }
+  
+  .website-link a {
+    color: #333;
+    text-decoration: none;
+  }

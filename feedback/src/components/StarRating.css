@@ -1,0 +1,45 @@
+.star-rating {
+    display: inline-block;
+    font-size: 24px;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-right: 10px; /* Add margin between star ratings */
+    margin-right: 500px;
+}
+
+.star {
+    color: #ccc;
+    transition: color 0.2s;
+}
+
+.star.selected {
+    color: #f1c40f;
+}
+
+.topic-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align both topic and star rating vertically */
+    margin: 10px 0;
+}
+
+.star-rating-bottom {
+    display: flex;
+    align-items: center; /* Keep the alignment centered for the last topic */
+    margin-top: 10px; /* Add some margin for spacing */
+}
+
+.heading-text {
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .star-rating {
+        margin-right: 0; /* Remove the margin to make it responsive */
+    }
+    
+    .topic-container {
+        flex-direction: column; /* Stack the topic and star rating vertically */
+        align-items: flex-start; /* Align them to the start of the container */
+    }
+}

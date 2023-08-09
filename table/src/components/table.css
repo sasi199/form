@@ -1,0 +1,51 @@
+/* FeedbackTable.css */
+.feedback-table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 14px;
+  }
+  
+  .feedback-table th,
+  .feedback-table td {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+  }
+  
+  .feedback-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .feedback-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .feedback-table tbody tr:hover {
+    background-color: #e0e0e0;
+  }
+
+  /* table.css */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  table th {
+    background-color: #f2f2f2;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  table tr:hover {
+    background-color: #ddd;
+  }

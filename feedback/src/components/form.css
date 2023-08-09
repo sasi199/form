@@ -1,0 +1,105 @@
+/* form.css */
+
+.feedback-form {
+  border: 2px solid #ccc;
+  padding: 20px;
+  margin-top: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-form h2 {
+  text-align: center;
+}
+
+.form-table {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.form-label {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin: 10px 0;
+  display: block;
+}
+
+.form-input,
+.form-select {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.form-input:focus,
+.form-select:focus {
+  outline: none;
+  border-color: #8b1746;
+  box-shadow: 0px 0px 5px rgba(183, 47, 91, 0.5);
+}
+
+.form-input:focus,
+.form-table:focus {
+  outline: none;
+  border-color: #8b1746;
+  box-shadow: 0px 0px 5px rgba(183, 47, 91, 0.5);
+}
+
+.form-input:focus,
+.box-model:focus {
+  outline: none;
+  border-color: #8b1746;
+  box-shadow: 0px 0px 5px rgba(183, 47, 91, 0.5);
+}
+.topic-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.topic-container h4 {
+  flex: 1;
+  margin: 20px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.box-model {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 90%;
+}
+
+.submit-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #8b1746;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #eaee0c;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .feedback-form {
+    max-width: 100%;
+    border-collapse: collapse;
+  }
+}
