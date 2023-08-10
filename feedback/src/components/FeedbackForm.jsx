@@ -46,20 +46,25 @@ const FeedbackForm = () => {
       ratings: updatedRatings,
     }));
   };
-
   const handleSubmit = async (event) => {
     event.preventDefault();
-
+  
     try {
       const response = await fetch('http://localhost:4000/submit-feedback', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-      body: JSON.stringify({
+        body: JSON.stringify({
           ...formData,
+          ratings: topics.map((topic, index) => ({
+            topic: topic,
+            rating: formData.ratings[index], // Assuming formData.ratings[index] is the user's rating input
+          })),
         }),
-      });
+        });
+      
+
 
       if (response.status === 200) {
         console.log('Feedback submitted successfully');
